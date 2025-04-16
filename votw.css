@@ -12,11 +12,6 @@
   padding-bottom: 20px;
   border-radius: 7px
 }
-.votw .h {
-  display: block;
-  font-size: 24px;
-  margin: 10px 0
-}
 .frosted {
   width: 90%;
   margin: -4px auto 0 auto;
@@ -61,12 +56,12 @@
   left: 50%;
   margin-left: -18px
 }
-.votw .title{
+.votw-title{
   display: block;
   font-size: 24px;
   margin: 10px 0
 }
-.votw .title,
+.votw-title,
 .card__title {
   color: gold;
   font-size: 26px;
@@ -113,7 +108,7 @@
   position: relative;
   z-index: 2
 }
-.votw.compact .title,.card__title{
+.votw.compact .votw-title,.card__title{
 font-size:20px
 }
 .compact .frosted{
