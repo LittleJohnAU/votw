@@ -3,6 +3,7 @@
   -webkit-box-shadow: inset 1px 1px 0px 1px #f1c04c,
     inset -1px -1px 0px 1px #f1c04c;
   box-shadow: inset 1px 1px 0px 1px #f1c04c, inset -1px -1px 0px 1px #f1c04c;
+  background-image: url(https://iili.io/30EONII.jpg);
   background-position: center 60%;
   background-size: cover;
   display: grid;
