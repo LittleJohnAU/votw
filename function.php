@@ -1,5 +1,5 @@
 <?php
-function setVotw($u,$k){
+function getVotw($u,$k){
         $url = "https://api.tlotl.cyou/vow.php";
         // if browser supports webp fetch webp images
         $webp = 0;
@@ -26,4 +26,4 @@ function setVotw($u,$k){
         curl_close($curl);
         return $response;
     }
-$votw = json_decode(setVotw('domain.com','MY_API_KEY'),true);
+$votw = json_decode(getVotw('domain.com','MY_API_KEY'),true);
