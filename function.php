@@ -26,4 +26,4 @@ function getVotw($u,$k){
         curl_close($curl);
         return $response;
     }
-$votw = json_decode(getVotw('domain.com','MY_API_KEY'),true);
+$votw = json_decode(getVotw('MY_DOMAIN','MY_API_KEY'),true);
