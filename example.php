@@ -1,16 +1,19 @@
 <?php
 include 'votw.php';
 $vw = new votw;
-header("Last-Modified: " . gmdate("D, d M Y H:i:s", $vw['gmtmod') . " GMT");
+//the last modified date will always be set to the first day of the week
+//the gmtmod is a GMT timestamp that can be used to format any date. In this case the GMT date format for the Last-Modified header
+header("Last-Modified: " . gmdate("D, d M Y H:i:s", $vw['gmtmod']) . " GMT");
+// if you want to use it to set the meta revised tag, you would do it like this
+// <meta name="revised" content="<?php echo date('l, F j, Y', $vw['gmtmod']); ?>">
 ?>
 <link rel="stylesheet" href="https://cdn.statically.io/gh/LittleJohnAU/votw/refs/heads/main/votw.min.css">
 <div class="votw" style="background-image:url('<?php echo $vw['bgimage']; ?>">
-          <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy">
-</div>
+  <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy"></div>
   <div class="frosted">
      <div class="votw-title"><?php echo $vw['title']; ?></div>
      <div>
-<img class="votw-icon" src="<?php echo $vw['icon']; ?>" width="36" height="45" alt="<?php echo $vw['character']; ?>" loading="lazy">
+        <img class="votw-icon" src="<?php echo $vw['icon']; ?>" width="36" height="45" alt="<?php echo $vw['character']; ?>" loading="lazy">
         <p class="votw-characteristic"><?php echo $vw['characteristic']; ?></p>
         <p class="votw-content"><?php echo $vw['content']; ?></p>
         <blockquote><?php echo $vw['verse']; ?><span></span><cite><?php echo $vw['cite']; ?></cite></blockquote>
