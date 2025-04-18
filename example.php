@@ -1,8 +1,9 @@
 <?php
 include 'votw.php';
 $vw = new votw;
+header("Last-Modified: " . gmdate("D, d M Y H:i:s", $vw['gmtmod') . " GMT");
 ?>
-
+<link rel="stylesheet" href="https://cdn.statically.io/gh/LittleJohnAU/votw/refs/heads/main/votw.min.css">
 <div class="votw" style="background-image:url('<?php echo $vw['bgimage']; ?>">
           <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy">
 </div>
