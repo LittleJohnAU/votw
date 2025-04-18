@@ -55,10 +55,10 @@ We also include a Bible reference as a bit of reinforcement, but using this, alo
 
 ### Prerequisites
 
-* Domain Name
+**Domain Name**
 The only thing you need to get an API Key is a valid domain. The domain is like your username and upon application for a key, we check that the domain is valid and as we do not track the usage, we regularly visit each domain to ensure the API is being used appropriately and in good faith. If we find that it's not or isn't being used at all, we will delete the key and block the domain from applying for another one. If we simply find it's not being used, we will delete the domain and key from the record and if you choose to use it again, you can simply create another key for another key. 
 
-* PHP
+**PHP**
 To use our API you need to send a POST request using PHP curl. We are working on making it possible to use Javascript to send a request, but currently this method is unavailable due to cross domain issues. The votw.php file is a PHP class that you can include in your code. The example.php file shows how you can simply and easily add it to your website and includes the HTML code and CDN CSS link to display it as in the screen shot.
 
 ### Installation
