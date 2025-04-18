@@ -44,7 +44,7 @@ In this carnal, instinctual, egoistic (self-centered) world in which people, esp
 
 The League of True Love is not a religious organization. Our motto and creed is; God IS love and love (therefore God) is not religious, carnal, instinctual or egoistic (self-centered and self-righteous) in any way, shape or form, but is characteristically, absolutely virtuous by nature.
 
-While we are not religious, we are godly and are all about living for love according to its characteristic virtues, like perfect gentlemen and gentlewomen or saints by any other name, and is why we freely provide our virtue of the week API for anyone who wants to add it to their website!
+While we are not religious, we are godly and are all about living for love according to its characteristic virtues, like perfect gentlemen and gentlewomen or saints by any other name and is why we freely provide our virtue of the week API for anyone who wants to add it to their website!
 
 We also include a Bible reference as a bit of reinforcement, but using this, along with any of the data is entirely optional. We're not about getting people to religiously read, memorize and recite scriptures like parrots, we're about DOING what's best for the highest good (virtue) of all and betterment of this carnal, instinctual, egoistic (self-centered, self-righteous) world.
 
