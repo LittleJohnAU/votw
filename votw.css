@@ -50,10 +50,12 @@
   margin: -20px;
 }
 .votw-icon {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  margin-left: -18px;
+  margin: -15px 0 -10px calc(50% - 18px);
+}
+.votw-logo {
+  text-align: center;
+  display: block;
+  height: 210px;
 }
 .votw-title {
   display: block;
@@ -76,12 +78,13 @@ p.votw-characteristic {
   color: #000;
   text-transform: uppercase;
   text-shadow: 0 0 5px #fff;
-  margin-top: 0;
+  margin: 0 0 10px 0;
 }
 p.votw-content {
   text-align: justify;
   color: #000;
   text-shadow: 0 0 5px #fff;
+  margin: 0 0 10px 0;
 }
 .frosted blockquote {
   font-family: "Helvetica", "Verdana", sans-serif;
@@ -101,15 +104,6 @@ p.votw-content {
   text-align: right;
   font-family: Georgia, serif;
   font-style: italic;
-}
-.knight {
-  margin-left: calc(50% - 65px);
-  display: block;
-  width: 130px;
-  height: 130px;
-  margin-top: 5px;
-  position: relative;
-  z-index: 2;
 }
 .votw.compact .votw-title,
 .card__title {
