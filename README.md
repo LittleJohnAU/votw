@@ -59,7 +59,7 @@ We also include a Bible reference as a bit of reinforcement, but using this, alo
 The only thing you need to get an API Key is a valid domain. The domain is like your username and upon application for a key, we check that the domain is valid and as we do not track the usage, we regularly visit each domain to ensure the API is being used appropriately and in good faith. If we find that it's not or isn't being used at all, we will delete the key and block the domain from applying for another one. If we simply find it's not being used, we will delete the domain and key from the record and if you choose to use it again, you can simply create another key for another key. 
 
 #### PHP
-To use our API you need to send a POST request using PHP curl. We are working on making it possible to use Javascript to send a request, but currently this method is unavailable due to cross domain issues. The votw.php file is a PHP class that you can include in your code. The example.php file shows how you can simply and easily add it to your website and includes the HTML code and CDN CSS link to display it as in the screen shot.
+To use our API you need to send a POST request using PHP curl. We are working on making it possible to use Javascript to send a request, but currently this method is unavailable due to cross domain issues. The **votw.php** file is a PHP class that you can include in your code. The **example.php** file shows how you can simply and easily add it to your website and includes the HTML code and CDN CSS link to display it as in the screen shot.
 
 ### Installation
 
@@ -67,7 +67,7 @@ _To use the API, you must follow the steps as outlined below._
 
 1. Get a free API Key at [https://api.tlotl.cyou/enroll.html](https://api.tlotl.cyou/enroll.html).
 2. Save the API Key that's generated for your domain somewhere safe.
-3. The post data must contain the domain and webp support. If you don't prefer to get the webp images if supported by the visitor's browser, you can just set this to 0. The votw PHP class however, includes a function that checks if webp is supported and sets it accordingly.
+3. The post data must contain the domain and webp support. If you don't prefer to get the webp images if supported by the visitor's browser, you can just set this to 0. The **votw** PHP class however, includes a function that checks if webp is supported and sets it accordingly.
  ```sh
     private function supportsWebP() {
         $result = 0;
@@ -100,7 +100,7 @@ _To use the API, you must follow the steps as outlined below._
    }
 }
   ```
-The API runs on GMT time and we use the gmtmod timestamp on our website to tell the search and other bots, that the page has been modified using a PHP header
+The API runs on GMT time for global usage and we use the gmtmod timestamp on our website to tell search and other bots, that the page has been modified. This is done with a PHP header
  ```sh
 header("Last-Modified: " . gmdate("D, d M Y H:i:s", (int)gmtdate) . " GMT");
  ```
@@ -132,15 +132,15 @@ You can include the minimized CSS file in your HTML using a CDN
  ```sh
 <link rel="stylesheet" href="https://cdn.statically.io/gh/LittleJohnAU/votw/refs/heads/main/votw.min.css">
  ```
-This is the HTML code we use to display the Virtue of the Week on our websites. This code includes the PHP code for outputting the variable in the response and you should see the [example file](example.php) for how to handle the response
+This is the HTML code we use to display the Virtue of the Week on our websites using the css in the file above. This code includes the PHP code for outputting the variable in the response and you should see the [example file](example.php) for one way of implementing it and handling the response
  ```sh
 <div class="votw" style="background-image:url({bgimage}">
-          <div class="votw-logo"> <img src="{logo}" alt="Virtue of the Week" width="319" height="200" loading="lazy">
+    <div class="votw-logo"> <img src="{logo}" alt="Virtue of the Week" width="319" height="200" loading="lazy">
 </div>
   <div class="frosted">
      <div class="votw-title">{title}</div>
      <div>
-<img class="votw-icon" src="{icon}" width="36" height="45" alt="{character}">
+        <img class="votw-icon" src="{icon}" width="36" height="45" alt="{character}">
         <p class="votw-characteristic">{characteristic}</p>
         <p class="votw-content">{content}</p>
         <blockquote>{verse}<span></span><cite>{cite}</cite></blockquote>
@@ -151,7 +151,7 @@ This is the HTML code we use to display the Virtue of the Week on our websites. 
 </div>
  ```
 
-_If you want to display it in a narrow column i.e. a sidebar, you can add the compact css class to the primary container_
+_If you want to display it in a narrow column i.e. a sidebar, you can add the **compact** CSS class to the primary container_
   ```sh
 <div class="votw compact">
   ```
