@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/LittleJohnAU/votw">
-    <img src="images/votw-lbadge.png" alt="Logo" width="319" height="200">
+    <img src="images/votw-badge.png" alt="Logo" width="319" height="200">
   </a>
 
   <h3 align="center">Add Our Virtue Of The Week To Your Website</h3>
