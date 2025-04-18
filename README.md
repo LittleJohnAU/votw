@@ -56,7 +56,6 @@ We also include a Bible reference as a bit of reinforcement, but using this, alo
 ### Prerequisites
 
 #### Domain Name
-
 The only thing you need to get an API Key is a valid domain. The domain is like your username and upon application for a key, we check that the domain is valid and as we do not track the usage, we regularly visit each domain to ensure the API is being used appropriately and in good faith. If we find that it's not or isn't being used at all, we will delete the key and block the domain from applying for another one. If we simply find it's not being used, we will delete the domain and key from the record and if you choose to use it again, you can simply create another key for another key. 
 
 #### PHP
@@ -110,7 +109,7 @@ And also the revised meta tag
 <meta name="revised" content="<?php echo date('l, F j, Y', (int)gmtdate?>">
  ```
 
-* What is the function of the meta revised tag?
+#### What is the function of the meta revised tag?
 Google and other search engines rank sites better if they continue to have fresh content. This is one of the benefits of adding a virtue of the week to your website. The meta revised tag is used to tell Search Engine bots (Google, Yahoo!, Bing etc.) the Last Modified Date and Time of any Webpage in which you have made certain changes. Web crawlers may decide to update their index by reading this tag info on a web page and even more so if you also use the Last-Modified header. It's good SEO practice.
 
 If there is an error, the status will read "error" with one of the following messages and no data
