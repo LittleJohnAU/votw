@@ -145,7 +145,7 @@ This is the HTML code we use to display the Virtue of the Week on our websites u
         <p class="votw-content">{content}</p>
         <blockquote>{verse}<span></span><cite>{cite}</cite></blockquote>
         <p class="votw-content">Challenge yourself to be aware of any and all opportunities to practice and apply {title|strtolower} in your life this week, and the times you should have, but didn't because of the characteristic pride, vanity, envy, selfishness, ambition, lust, greed, desire for creature comfort and/or fear for survival of the carnal, instinctual, egoistic (self-centered) nature of your flesh.</p>
-        <p><a href="https://leagueoftrue.love/virtues" aria-label="The 52 virtues of true love">All 52 Virtues</a></p>
+        <p><a href="https://leagueoftrue.love/virtues" aria-label="The 52 virtues of true love" target="_blank" rel="noopener">All 52 Virtues</a></p>
      </div>
   </div>
 </div>
