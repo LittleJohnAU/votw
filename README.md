@@ -65,7 +65,7 @@ To use our API you need to send a POST request using PHP curl. We are working on
 
 _To use the API, you must follow the steps as outlined below._
 
-1. Get a free API Key at [https://api.tlotl.cyou/enroll.html](https://api.tlotl.cyou/enroll.html).
+1. Get a free API Key at [https://api.tlotl.cyou](https://api.tlotl.cyou).
 2. Save the API Key that's generated for your domain somewhere safe.
 3. The post data must contain the domain and webp support. If you don't prefer to get the webp images if supported by the visitor's browser, you can just set this to 0. The **votw** PHP class however, includes a function that checks if webp is supported and sets it accordingly.
  ```sh
