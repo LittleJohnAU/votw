@@ -67,8 +67,9 @@ _To use the API, you must follow the steps as outlined below._
 
 1. Get a free API Key at [https://api.tlotl.cyou](https://api.tlotl.cyou).
 2. Save the API Key that's generated for your domain somewhere safe.
-3. The post data must contain the domain and API Key. If you prefer not to use the images we provide, you need to set the variable **useimages** in the [vtow.class.php](vtow.class.php) class file to 0 and they will not be included in the response. 
-3. The response to a request is in JSON format as shown in this example
+3. The post data must contain the domain and API Key.
+4. We include the images in the response by default. If you prefer not to use them, you can set the variable **useimages** in the [vtow.class.php](vtow.class.php) class to 0 and they will not be included in the response. 
+5. The response to a request is in JSON format as shown in this example
   ```sh
 {
    "status":"success",
