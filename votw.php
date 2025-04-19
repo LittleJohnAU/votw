@@ -39,7 +39,7 @@ class votw{
         return $result;
     }
     private function fetchVotw(){
-        $url = "https://api.tlotl.cyou/vow.php";
+        $url = "https://api.tlotl.cyou/data/vow.php";
         $webp = $this->supportsWebP();
         $postData = [
             'domain' => $this->domain,
