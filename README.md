@@ -116,7 +116,7 @@ If there is an error, the status will read "error" with one of the following mes
  ```sh
 "Unauthorized access"
 "Invalid API key"
-"Invalid URL"
+"Invalid domain"
 "Invalid request method"
 "Invalid JSON data"
  ```
