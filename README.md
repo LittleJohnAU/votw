@@ -118,7 +118,7 @@ If there is an error, the status will read "error" with one of the following mes
 "Invalid API key"
 "Invalid domain"
 "Invalid request method"
-"Invalid JSON data"
+"Invalid POST data"
  ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
