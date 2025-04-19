@@ -68,8 +68,9 @@ _To use the API, you must follow the steps as outlined below._
 1. Get a free API Key at [https://api.tlotl.cyou](https://api.tlotl.cyou).
 2. Save the API Key that's generated for your domain somewhere safe.
 3. The post data must contain the domain and API Key.
-4. We include the images in the response by default. If you prefer not to use them, you can set the variable **useimages** in the [vtow.class.php](vtow.class.php) class to 0 and they will not be included in the response. 
-5. The response to a request is in JSON format as shown in this example
+4. We include the CDN hosted images in the response by default. If you prefer not to use them, you can set the variable **useimages** in the [vtow.class.php](vtow.class.php) class to 0 and they will not be included in the response.
+5. The **votw** also includes a function that checks if the user's browser supports webp. If you don't want to use webp images, just set the variable **webp** to 0;
+6. The response to a request is in JSON format as shown in this example
   ```sh
 {
    "status":"success",
