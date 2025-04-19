@@ -134,17 +134,16 @@ You can include the minimized CSS file in your HTML using a CDN
  ```
 This is the HTML code we use to display the Virtue of the Week on our websites using the css in the file above. This code includes the PHP for outputting the variable in the response as used in the [example file](example.php)
  ```sh
-<div class="votw" style="background-image:url({bgimage}">
-    <div class="votw-logo"> <img src="{logo}" alt="Virtue of the Week" width="319" height="200" loading="lazy">
-</div>
+<div class="votw" style="background-image:url('<?php echo $vw['bgimage']; ?>">
+  <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy"></div>
   <div class="frosted">
-     <div class="votw-title">{title}</div>
+     <div class="votw-title"><?php echo $vw['title']; ?></div>
      <div>
-        <img class="votw-icon" src="{icon}" width="36" height="45" alt="{character}">
-        <p class="votw-characteristic">{characteristic}</p>
-        <p class="votw-content">{content}</p>
-        <blockquote>{verse}<span></span><cite>{cite}</cite></blockquote>
-        <p class="votw-content">Challenge yourself to be aware of any and all opportunities to practice and apply {title|strtolower} in your life this week, and the times you should have, but didn't because of the characteristic pride, vanity, envy, selfishness, ambition, lust, greed, desire for creature comfort and/or fear for survival of the carnal, instinctual, egoistic (self-centered) nature of your flesh.</p>
+        <img class="votw-icon" src="<?php echo $vw['icon']; ?>" width="36" height="45" alt="<?php echo $vw['character']; ?>" loading="lazy">
+        <p class="votw-characteristic"><?php echo $vw['characteristic']; ?></p>
+        <p class="votw-content"><?php echo $vw['content']; ?></p>
+        <blockquote><?php echo $vw['verse']; ?><span></span><cite><?php echo $vw['cite']; ?></cite></blockquote>
+        <p class="votw-content">Challenge yourself to be aware of any and all opportunities to practice and apply <?php echo strtolower($vw['title']); ?> in your life this week, and the times you should have, but didn't because of the characteristic pride, vanity, envy, selfishness, ambition, lust, greed, desire for creature comfort and/or fear for survival of the carnal, instinctual, egoistic (self-centered) nature of your flesh.</p>
         <p><a href="https://leagueoftrue.love/virtues" aria-label="The 52 virtues of true love" target="_blank" rel="noopener">All 52 Virtues</a></p>
      </div>
   </div>
