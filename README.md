@@ -124,7 +124,7 @@ If there is an error, the status will read "error" with one of the following mes
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-You can use the html, css and CDN images we provide and which we use in our websites, to display the virtue of the week as shown in the screenshot above.
+You can use the html, css and CDN image links we provide in the response and which we use in our websites, to display the virtue of the week as shown in the screenshot above.
 
 The code we provide for your use is responsive and displays well on all devices.
 
