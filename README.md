@@ -132,7 +132,7 @@ You can include the minimized CSS file in your HTML using a CDN
  ```sh
 <link rel="stylesheet" href="https://cdn.statically.io/gh/LittleJohnAU/votw/refs/heads/main/votw.min.css">
  ```
-This is the HTML code we use to display the Virtue of the Week on our websites using the css in the file above. This code includes the PHP for outputting the variable in the response as used in the [example file](example.php)
+This is the HTML code we use to display the Virtue of the Week on our websites using the css in the file above. This code includes the PHP for outputting the variables in the JSON response as used in the [example file](example.php)
  ```sh
 <div class="votw" style="background-image:url('<?php echo $vw['bgimage']; ?>">
   <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy"></div>
