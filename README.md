@@ -59,7 +59,7 @@ We also include a Bible reference as a bit of reinforcement, but using this, alo
 The only thing you need to get an API Key is a valid domain. The domain is like your username and upon application for a key, we check that the domain is valid and as we do not track the usage, we regularly visit each domain to ensure the API is being used appropriately and in good faith. If we find that it's not or isn't being used at all, we will delete the key and block the domain from applying for another one. If we simply find it's not being used, we will delete the domain and key from the record and if you choose to use it again, you can simply create another key for another key. 
 
 #### PHP
-To use our API you need to send a POST request using PHP curl. We are working on making it possible to use Javascript to send a request, but currently this method is unavailable due to cross domain issues. The **votw.class.php** file is a PHP class that you can include in your code and is all you need. The **example.php** file shows how you can simply and easily add it to your website and includes the HTML code and CDN CSS link to display it as in the screen shot.
+To use our API you need to send a POST request using PHP curl. We are working on making it possible to use Javascript to send a request, but currently this method is unavailable due to cross domain issues. The **votw.class.php** file is a PHP class that you can include in your code and is all you need. The [example file](example.php) file shows how you can simply and easily add it to your website and includes the HTML code and CDN CSS link to display it as in the screen shot.
 
 ### Installation
 
@@ -67,19 +67,7 @@ _To use the API, you must follow the steps as outlined below._
 
 1. Get a free API Key at [https://api.tlotl.cyou](https://api.tlotl.cyou).
 2. Save the API Key that's generated for your domain somewhere safe.
-3. The post data must contain the domain and webp support. If you don't prefer to get the webp images if supported by the visitor's browser, you can just set this to 0. The **votw** PHP class however, includes a function that checks if webp is supported and sets it accordingly.
- ```sh
-    private function supportsWebP() {
-        $result = 0;
-        // this detects if webp is supported by the visitor's browser
-        if (isset($_SERVER['HTTP_ACCEPT'])) {
-            if(strpos( $_SERVER['HTTP_USER_AGENT'], ' Chrome/' ) !== false ) {
-              $result = 1;
-            }
-        }
-        return $result;
-    }
- ```
+3. The post data must contain the domain and API Key. If you prefer not to use the images we provide, you need to set the variable **useimages** in the [vtow.class.php](vtow.class.php) class file to 0 and they will not be included in the response. 
 3. The response to a request is in JSON format as shown in this example
   ```sh
 {
@@ -100,6 +88,14 @@ _To use the API, you must follow the steps as outlined below._
    }
 }
   ```
+If there is an error, the status will read "error" with one of the following messages and no data
+ ```sh
+"Unauthorized access"
+"Invalid API key"
+"Invalid domain"
+"Invalid request method"
+"Invalid POST data"
+ ```
 The API runs on GMT time for global usage and we use the gmtmod timestamp on our website to tell search and other bots, that the page has been modified. This is done with a PHP header
  ```sh
 header("Last-Modified: " . gmdate("D, d M Y H:i:s", (int)gmtdate) . " GMT");
@@ -111,20 +107,11 @@ And also the revised meta tag
 
 #### What is the function of the meta revised tag?
 Google and other search engines rank sites better if they continue to have fresh content. This is one of the benefits of adding a virtue of the week to your website. The meta revised tag is used to tell Search Engine bots (Google, Yahoo!, Bing etc.) the Last Modified Date and Time of any Webpage in which you have made certain changes. Web crawlers may decide to update their index by reading this tag info on a web page and even more so if you also use the Last-Modified header. It's good SEO practice.
-
-If there is an error, the status will read "error" with one of the following messages and no data
- ```sh
-"Unauthorized access"
-"Invalid API key"
-"Invalid domain"
-"Invalid request method"
-"Invalid POST data"
- ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-You can use the html, css and CDN image links we provide in the response and which we use in our websites, to display the virtue of the week as shown in the screenshot above.
+You can use the HTML, CSS and CDN image links we provide in the response and which we use in our websites, to display the virtue of the week as shown in the screenshot above or make your own custom layout.
 
 The code we provide for your use is responsive and displays well on all devices.
 
@@ -132,7 +119,7 @@ You can include the minimized CSS file in your HTML using a CDN
  ```sh
 <link rel="stylesheet" href="https://cdn.statically.io/gh/LittleJohnAU/votw/refs/heads/main/votw.min.css">
  ```
-This is the HTML code we use to display the Virtue of the Week on our websites using the css in the file above. This code includes the PHP for outputting the variables in the JSON response as used in the [example file](example.php)
+This is the HTML code we use to display the Virtue of the Week on our websites using the CSS. This code includes the PHP for outputting the variables in the JSON response as used in the [example file](example.php)
  ```sh
 <div class="votw" style="background-image:url('<?php echo $vw['bgimage']; ?>">
   <div class="votw-logo"> <img src="<?php echo $vw['logo']; ?>" alt="Virtue of the Week" width="319" height="200" loading="lazy"></div>
