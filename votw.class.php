@@ -43,6 +43,7 @@ class votw{
         $webp = $this->supportsWebP();
         $postData = [
             'domain' => $this->domain,
+            'useimages' => 1,
             'webp' => $webp
         ];
         $jsonData = json_encode($postData);
