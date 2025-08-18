@@ -100,11 +100,12 @@ If there is an error, the status will read "error" with one of the following mes
  ```
 The API runs on GMT time for global usage and we use the gmtmod timestamp on our website to tell search and other bots, that the page has been modified. This is done with a PHP header
  ```sh
-header("Last-Modified: " . gmdate("D, d M Y H:i:s", (int)gmtdate) . " GMT");
+$gmd = $response['data']['gmtmod'];
+header("Last-Modified: " . gmdate("D, d M Y H:i:s", (int)$gmd) . " GMT");
  ```
 And also the revised meta tag
  ```sh
-<meta name="revised" content="<?php echo date('l, F j, Y', (int)gmtdate?>">
+<meta name="revised" content="<?php echo date('l, F j, Y', (int)$gmd); ?>">
  ```
 
 #### What is the function of the meta revised tag?
