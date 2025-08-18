@@ -2,21 +2,19 @@
 class votw{
     private $domain = 'yourdomaingoes.here';
     private $key = 'API_KEY';
-    private $webp = 0;
+    private $usewebp = true;
     public function __construct(){
         if(isset($_SESSION['virtue'])){
-            // if the virtue data is stored in the session
             $votw = json_decode($_SESSION['virtue'],true);
-            $vt = $cfg->setVotw();
-            $vt = json_decode($vt,true);
-            if($vt['status'] == 'success'){
-                $votw = $vt['data'];
-                $_SESSION['virtue'] = json_encode($votw);
+            if(!$votw['logo'] || !$votw['gmtmod']){
+                $vt = $this->fetchVotw();
+                if($vt['status'] == 'success'){
+                    $votw = $vt['data'];
+                    $_SESSION['virtue'] = json_encode($votw);
+                }
             }
         } else {
-            // if not stored in the session, then fetch new data
             $vt = $this->fetchVotw();
-            $vt = json_decode($vt,true);
             if($vt['status'] == 'success'){
                 $votw = $vt['data'];
                 $_SESSION['virtue'] = json_encode($votw);
@@ -40,7 +38,10 @@ class votw{
     }
     private function fetchVotw(){
         $url = "https://api.tlotl.cyou/data/vow.php";
-        $webp = $this->supportsWebP();
+        $webp = 0;
+        if($this->usewebp !== false){
+          $webp = $this->supportsWebP();
+        }
         $postData = [
             'domain' => $this->domain,
             'useimages' => 1,
