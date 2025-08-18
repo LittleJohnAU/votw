@@ -4,25 +4,30 @@ class votw{
     private $key = 'API_KEY';
     private $usewebp = true;
     public function __construct(){
+        $votw = false;
         if(isset($_SESSION['virtue'])){
             $votw = json_decode($_SESSION['virtue'],true);
             if(!$votw['logo'] || !$votw['gmtmod']){
-                $vt = $this->fetchVotw();
+                $json = $this->fetchVotw();
+                $vt = json_decode($json,true);
                 if($vt['status'] == 'success'){
                     $votw = $vt['data'];
+                    // ensure the week number and GMT timestamp are not strings
+                    $votw['week'] = (int)$votw['week'];
+                    $votw['gmtmod'] = (int)$votw['gmtmod'];
                     $_SESSION['virtue'] = json_encode($votw);
                 }
             }
         } else {
-            $vt = $this->fetchVotw();
+            $json = $this->fetchVotw();
+            $vt = json_decode($json,true);
             if($vt['status'] == 'success'){
                 $votw = $vt['data'];
+                $votw['week'] = (int)$votw['week'];
+                $votw['gmtmod'] = (int)$votw['gmtmod'];
                 $_SESSION['virtue'] = json_encode($votw);
             }
         }
-        // ensure the week number and GMT timestamp are not strings
-        $votw['week'] = (int)$votw['week'];
-        $votw['gmtmod'] = (int)$votw['gmtmod'];
         return $votw;
     }
     
