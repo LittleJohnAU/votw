@@ -13,7 +13,7 @@
     Our API allows you to display a different virtue on your website every week of the year which helps with SEO by updating content. We provide optional html, css and remote images for you to create the layout as shown in the screenshot below.
   </p>
 <p>
-<img src="images/votw-screenshot1.jpg" alt="Screen Shot" style="max-width: 100%;">
+<img src="images/votw-screenshot2.jpg" alt="Screen Shot" style="max-width: 100%;">
 </p>
 </div>
 
