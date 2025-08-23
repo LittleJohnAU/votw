@@ -83,9 +83,9 @@ _To use the API, you must follow the steps as outlined below._
       "verse":"\"Whereas you have been forsaken and hated, so that no one went through you, I will make you an eternal excellence, a joy of many generations.\"",
       "cite":"Isaiah 60:15",
       "character":"lion",
-      "icon":"https:\/\/iili.io\/30EWNzg.webp",
-      "logo":"https:\/\/iili.io\/30pqbkB.webp",
-      "bgimage":"https:\/\/iili.io\/30EOjmN.webp",
+      "icon":"https:\/\/im.tlotl.cyou\/vw\/1\/webp",
+      "logo":"https:\/\/im.tlotl.cyou\/vw\/6\/webp",
+      "bgimage":"https:\/\/im.tlotl.cyou\/vw\/5\/webp",
       "characteristic":"active lion-like characteristic of true love's divine nature"
    }
 }
