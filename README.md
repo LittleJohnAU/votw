@@ -25,7 +25,16 @@
 $virtue = new virtue('day');
 $virtue = new virtue('one', 'JOY');
 $virtue = new virtue('tone', 'fiery');
-$virtue = new virtue('pairings');</code></pre>
+$virtue = new virtue('pairings');
+if ($virtue->hasError()) {
+    echo "⚠️ Error: " . $virtue->get()['error'];
+} else {
+    $data = $virtue->get();
+    // Render virtue card
+}
+// for debugging
+print_r($virtue->debug());
+</code></pre>
   <p>Each call returns a decoded JSON array. Session caching is built-in to reduce redundant requests.</p>
 
   <h2>🧠 SEO & Caching Tips</h2>
