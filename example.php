@@ -1,7 +1,10 @@
 <?php
 include 'virtue.class.php';
-$vw = new virtue('week');
-if($vw !== false){ // if there are no errors output the virtue
+$virtue = new virtue('week');
+if ($virtue->hasError()) {
+    echo "⚠️ Error: " . $virtue->get()['error'];
+} else {
+ $vw = $virtue->get();
   //the gmtmod is a GMT timestamp that will always be the first day of the week in GMT and can be used to format any date. In this case the GMT date format for the Last-Modified header using the gmdate function
   header("Last-Modified: " . gmdate("D, d M Y H:i:s", $vw['gmtmod']) . " GMT");
   // if you want to use it to set the meta revised tag, you would do it like this, using the date function
