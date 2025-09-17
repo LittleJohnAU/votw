@@ -1,6 +1,6 @@
 <?php
-include 'votw.class.php';
-$vw = new votw;
+include 'virtue.class.php';
+$vw = new virtue('week');
 if($vw !== false){ // if there are no errors output the virtue
   //the gmtmod is a GMT timestamp that will always be the first day of the week in GMT and can be used to format any date. In this case the GMT date format for the Last-Modified header using the gmdate function
   header("Last-Modified: " . gmdate("D, d M Y H:i:s", $vw['gmtmod']) . " GMT");
