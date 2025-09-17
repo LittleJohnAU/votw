@@ -49,7 +49,7 @@ header("Last-Modified: " . $lastModified);</code></pre>
 &lt;meta http-equiv="last-modified" content="&lt;?= $lastModified ?&gt;"&gt;</code></pre>
 
   <h2>🎨 Styling</h2>
-  <p>If you are using the Virtue of the Week, you can use our CSS file here to style it as shown in the screenshot below.</p>
+  <p>If you are using the Virtue of the Week, you can use our CSS and example files to style it as shown in the screenshot below.</p>
   
   ![Virtue of the Week Screenshot](images/votw-screenshot.jpg)
   
