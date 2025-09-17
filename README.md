@@ -1,4 +1,4 @@
-<h1>🌾 League of True Love API – PHP Integration Guide</h1>
+<h1>🌾 League of True Love Virtues API – PHP Integration Guide</h1>
 
   <blockquote>
     <em>“Truth that wounds ego but heals the soul.”<br>
