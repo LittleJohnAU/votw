@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>League of True Love API – PHP Integration Guide</title>
-  <meta name="description" content="A sanctuary of virtues delivered through structured JSON. Integrate the League of True Love API with PHP.">
+
   <style>
     body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 2rem; }
     h1, h2, h3 { color: #4B2E83; }
@@ -17,8 +12,6 @@
     .tone-solemn { background: #f5f5f5; }
     .tone-radiant { background: #e0f7fa; }
   </style>
-</head>
-<body>
 
   <h1>🌾 League of True Love API – PHP Integration Guide</h1>
 
@@ -98,6 +91,3 @@ header("Last-Modified: " . $lastModified);</code></pre>
 
   <h2>📜 License & Mission</h2>
   <p>This project is part of the <strong>League of True Love</strong>, a divine mission to gather everyday saints through truth, beauty, and virtue. Use it freely, but reverently.</p>
-
-</body>
-</html>
