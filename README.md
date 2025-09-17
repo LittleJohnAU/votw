@@ -15,7 +15,10 @@
     <li>Virtues by Tone</li>
     <li>Virtue Pairings</li>
   </ul>
-
+  
+  ##📝 Registration
+  You need to register your domain for an API token on our [API Portal](https://api.tlotl.cyou)
+  
   <h2>📦 Installation</h2>
   <pre><code>git clone https://github.com/LittleJohnAU/votw.git</code></pre>
   <pre><code>require_once 'virtue.class.php';</code></pre>
