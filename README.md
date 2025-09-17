@@ -1,19 +1,4 @@
-
-  <style>
-    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 2rem; }
-    h1, h2, h3 { color: #4B2E83; }
-    code, pre { background: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
-    .tone-gentle { background: #fdf6f0; }
-    .tone-fiery { background: #ffe4e1; }
-    .tone-sacred { background: #f0f8ff; }
-    .tone-joyful { background: #f3e5f5; }
-    .tone-solemn { background: #f5f5f5; }
-    .tone-radiant { background: #e0f7fa; }
-  </style>
-
-  <h1>🌾 League of True Love API – PHP Integration Guide</h1>
+<h1>🌾 League of True Love API – PHP Integration Guide</h1>
 
   <blockquote>
     <em>“Truth that wounds ego but heals the soul.”<br>
@@ -57,12 +42,12 @@ header("Last-Modified: " . $lastModified);</code></pre>
 &lt;/div&gt;</code></pre>
 
   <ul>
-    <li><strong>tone-gentle</strong>: pastel clouds, soft fade-in</li>
-    <li><strong>tone-fiery</strong>: radiant sunburst, bold entrance</li>
-    <li><strong>tone-sacred</strong>: scroll reveal, dove flight</li>
-    <li><strong>tone-joyful</strong>: lavender sparkle, bounce animation</li>
-    <li><strong>tone-solemn</strong>: candlelight vignette, slow fade</li>
-    <li><strong>tone-radiant</strong>: celestial gradient, glow pulse</li>
+    <li style="background: #fdf6f0;"><strong>tone-gentle</strong>: pastel clouds, soft fade-in</li>
+    <li style="background:#ffe4e1;"><strong>tone-fiery</strong>: radiant sunburst, bold entrance</li>
+    <li style="background:#f0f8ff;"><strong>tone-sacred</strong>: scroll reveal, dove flight</li>
+    <li style="background:#f3e5f5;"><strong>tone-joyful</strong>: lavender sparkle, bounce animation</li>
+    <li style="background:#f5f5f5;"><strong>tone-solemn</strong>: candlelight vignette, slow fade</li>
+    <li style="background:#e0f7fa;"><strong>tone-radiant</strong>: celestial gradient, glow pulse</li>
   </ul>
 
   <h2>🕊️ Virtue Fields</h2>
