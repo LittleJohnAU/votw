@@ -16,7 +16,7 @@
     <li>Virtue Pairings</li>
   </ul>
   
-  ##📝 Registration
+  <h2>📝 Registration</h2>
   You need to register your domain for an API token on our [API Portal](https://api.tlotl.cyou)
   
   <h2>📦 Installation</h2>
