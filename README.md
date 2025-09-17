@@ -36,6 +36,8 @@ header("Last-Modified: " . $lastModified);</code></pre>
   <pre><code>&lt;meta name="revised" content="&lt;?= date("l, F j, Y", MODATE) ?&gt;"&gt;
 &lt;meta http-equiv="last-modified" content="&lt;?= $lastModified ?&gt;"&gt;</code></pre>
 
+  <h2>🎨 Styling</h2>
+  <p>If you are using the Virtue of the Week, you can use our CSS file here to style it as shown below </p>
   <h2>🎨 Tone Styling</h2>
   <pre><code>&lt;div class="tone-&lt;?= strtolower($virt['tone']) ?&gt;"&gt;
   &lt;!-- Your virtue card --&gt;
